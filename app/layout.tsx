@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 export const metadata: Metadata={
+  metadataBase:new URL(siteUrl),
   title:'Mesa Alta — A lodge and bar in Chinchero',
   description:'Six cabins, one long table, 3,754 metres up. Opening in Chinchero, Peru.',
   openGraph:{title:'Mesa Alta',description:'Six cabins. One long table. 3,754 metres up.',images:[{url:'/images/social-card.png',width:1200,height:630}]},
