@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main className="not-found"><Link className="wordmark" href="/">MESA ALTA</Link><div><img src="/images/tuff-404.png" alt="Tuff checking an empty doorway"/><section><p className="kicker">404 · Nothing here</p><h1>Tuff already checked.</h1><p>This door does not lead anywhere. Try the one back to the lodge.</p><Link className="button" href="/">Return home <span>↗</span></Link></section></div></main>}
